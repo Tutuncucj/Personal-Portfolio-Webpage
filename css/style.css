@@ -1,0 +1,294 @@
+    body {
+        background-color: rgb(1, 1, 5);
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+    a{
+        color: #fff;
+    }
+
+    /* Navbar */
+
+    #navbar {
+        background-color: rgb(15, 15, 53); 
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+       
+    }
+    
+    .container-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+    }
+    
+    .nav-brand {
+        font-size: 2rem;
+        color: rgb(66, 14, 255);
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        text-decoration:wavy;
+        text-align: center;
+    }
+    
+    .nav-list {
+         display: flex;
+         list-style-type: none; 
+         flex-wrap:wrap;
+    }
+    
+    .nav-item {
+        margin-right : 60px;
+       
+    }
+    
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 2rem;
+        display: block;
+    }
+    
+    /* Welcome Section */
+
+    .welcome-section{
+        background-color: rgb(5, 16, 65);
+        margin-top: 84px;
+        height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    
+    .container-info {
+        margin-top: 200px;
+        max-width: 100%;
+    }
+    
+    
+    .welcome-title {
+        font-size: 6rem;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        
+    
+    }
+    
+    .welcome-text {
+        color: royalblue;
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+        background-color: transparent;
+    }
+    
+    /* Portfolio Section*/
+
+.row {
+    padding: 0 14px;
+    margin-top: 100px;
+}
+
+.col {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 33%;
+    max-width: 33%;
+    margin-bottom: 50px;
+    }
+
+.project-image {
+    width: 80%;
+    height: 400px;
+}
+
+.portfolio-title {
+    background-color: gray;
+    color: whitesmoke;
+    max-width: 80%;
+    margin: 0 auto;
+    transform: translateY(-6px);
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+    padding: 20px 0px;
+}
+  
+  .code {
+    color: rgb(248, 99, 0);
+    transition: color 0.3s ease-out;
+    display: none;
+}
+
+.portfolio-title:hover  .code{
+    display: inline;
+}
+
+.more-examples {
+    background-color: gray;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    padding: 15px;
+    transition:  0.3s ease-out;
+}
+.more-examples a {
+    font-size: 2rem;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+  
+}
+.more-examples:hover  .span{
+    margin-left: 10px;
+}
+
+.more-examples:hover {
+    background-color: red;
+}
+
+/* Contact Section*/
+
+.contact {
+    background-color: #303841;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact-title {
+    color: #fff;
+    padding-top: 100px;
+    font-size: 6rem;
+}
+
+.contact-text {
+    font-size: 2rem;
+    color: rgb(206, 199, 199);
+    padding: 20px;
+    font-weight: 900;
+}
+
+.contact-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 10px;
+ 
+}
+.contact-item {
+    margin: 50px;
+    transition: 1s ease;
+}
+
+.contact-link {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.contact-item:hover {
+    transform: translateY(50px);
+}
+
+/* Footer Section */
+
+.footer-section {
+    background-color: #303841;;
+    border-top: 1px solid red; 
+    padding: 5%;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+  /* Media @ */
+  
+  /* Navbar Section */
+
+@media screen and (max-width:320px) {
+
+    .nav-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .nav-list {
+        margin-left: 80px;
+    }
+}
+
+/* Welcome section */
+@media screen and (max-width:490px) {
+ 
+    .welcome-title{
+     max-width: 100%;
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
+     font-size: 4rem;
+    }
+}
+/* Portfolio Section */
+
+@media (max-width: 1110px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .project-image {
+        height: 400px;
+    }
+    .card {
+        margin-bottom: 100px;
+        flex: 50%;
+        max-width: 50%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      flex: 100%;
+      max-width: 100%;
+    }
+  
+  }
+
+
+/* footer Section */
+
+@media screen and (max-width:930px) {
+ 
+    .contact-list {
+        flex-direction: column;
+    }
+    .contact-title {
+        font-size: 3rem;
+    }
+}
