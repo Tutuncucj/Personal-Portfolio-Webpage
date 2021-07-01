@@ -224,10 +224,11 @@
 .footer-info {
     display: flex;
     justify-content: space-between;
+    padding: 15px;
 }
 
   /* Media @ */
-  
+
   /* Navbar Section */
 
 @media screen and (max-width:320px) {
@@ -281,7 +282,7 @@
   }
 
 
-/* footer Section */
+/* Contact Section */
 
 @media screen and (max-width:930px) {
  
@@ -292,3 +293,18 @@
         font-size: 3rem;
     }
 }
+
+/* Footer Section  */
+
+@media screen and (max-width: 650px) {
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-info p {
+        margin: 20px;
+
+    }
+}
+
