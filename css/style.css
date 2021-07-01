@@ -231,11 +231,12 @@
 
   /* Navbar Section */
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:380px) {
 
     .nav-list {
         display: none;
     }
+    
 }
 
 @media screen and (max-width:900px) {
